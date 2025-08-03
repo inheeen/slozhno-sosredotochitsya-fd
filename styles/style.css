@@ -36,6 +36,7 @@
   line-height: 25%;
   font-size: 18px;
   position: relative;
+  cursor: default;
 }
 .nav-decoration::after {
   position: absolute;
@@ -65,18 +66,22 @@
   text-transform: lowercase;
   font-size: 18px;
   padding: 1.5px 13px;
+  cursor: pointer;
 }
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color, #FF0070);
   border: 1px solid rgba(255, 0, 112, 0.4);
-  padding: 0.5px 12px;
+}
+.header__theme-menu-button:focus {
+  outline: none;
 }
 .header__theme-menu-button:focus-visible {
+  outline: none;
+  text-underline-offset: 5px; 
   text-decoration: underline var(--accent-color, #FF0070);
 }
-
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color, #FF0070);
+  pointer-events: none;
 }
 
 .main-title {
@@ -150,22 +155,27 @@
   position: relative;
 }
 .accent-link:hover {
-  text-decoration: none;
+  text-decoration: underline var(--main-text-color, #F1B2CE);
 }
 .accent-link:hover::after {
   content: '';
+  text-decoration: none;
   position: absolute;
   left: 2.5px;
   bottom: -1px;
   width: 100%;
   height: 1px;
-  background-color: var(--main-text-color, #F1B2CE);
+}
+.accent-link:focus {
+  outline: none;
 }
 .accent-link:focus-visible {
+  padding: 1.5px 3px;
   border: 1px solid var(--main-text-color, #F1B2CE);
+  outline: none;
 }
 
-.ligth__article-title {
+.light__article-title {
   font-weight: normal;
   font-size: 18px;
   line-height: 23.4px;
@@ -476,9 +486,18 @@
     --accent-text-color: #353430;
     --title-color: #FFC2E6;
   }
+  .header__theme-menu-button:hover {
+  border: 1px solid rgba(50, 49, 45, 0.4);
+  padding: 0.5px 12px;
+  }
+  .header__theme-menu-button:focus-visible {
+    text-decoration: underline var(--accent-text-color, #353430);
+  }
+  .header__theme-menu-button_active {
+    border: 1px solid var(--accent-text-color, #353430);
+  }
 }
 
-/* Для тёмной системной темы */
 @media (prefers-color-scheme: dark) {
   .theme-auto {
     --background-img: url(../images/cover-image-dark.png);
