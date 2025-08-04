@@ -3,10 +3,6 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-.theme-dark .nav-decoration {
-  display: block;
-}
-
 :root.theme-dark {
   --background-img: url(../images/cover-image-dark.png);
   --background-color: #000028;
@@ -17,6 +13,11 @@
   --decoration-color: #FF0070;
 }
 
+.theme-dark .nav-decoration {
+  display: block;
+}
+
+
 @media (prefers-color-scheme: dark) {
   .theme-auto {
     --background-img: url(../images/cover-image-dark.png);
@@ -26,5 +27,41 @@
     --main-text-color: #F1B2CE;
     --accent-text-color: #000028;
     --decoration-color: #FF0070;    
+  }
+}
+@media ( min-width: 375px) {
+  .theme-dark .header__theme-menu-list {
+    margin-top: 45px;
+    margin-bottom: 2px;
+  }
+}
+@media ( min-width: 768px ) {
+  .theme-dark .header__theme-menu-list {
+    margin-top: 155px;
+    margin-bottom: 2px;
+  }
+}
+@media ( min-width: 1024px) {
+  .theme-dark .header__theme-menu-list {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 375px ) {
+  .header__theme-menu-list {
+    margin-top: 45px;
+    margin-bottom: 2px;
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 768px ) {
+  .header__theme-menu-list {
+    margin-top: 155px;
+    margin-bottom: 2px;
+  }
+}
+@media (prefers-color-scheme: dark) and (min-width: 1024px ) {
+  .header__theme-menu-list {
+    margin-top: 10px;
+    margin-bottom: 0px;
   }
 }

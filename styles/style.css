@@ -11,12 +11,12 @@
   font-family: var(--main-font, monospace);
   color: var(--main-text-color, #F1B2CE);
   block-size: 100%;
-  padding: 0px 2px;
-  margin-bottom: 0px
+  padding: 0 10px;
 }
 
 .header {
   block-size: 100vh;
+  padding-top: 8px;
   display: grid;
   grid-template-rows: repeat(3, min-content);
 }
@@ -33,7 +33,7 @@
   align-items: center;
   color: var(--accent-color, #FF0070);
   gap: 10px;
-  margin: 13px 28px 50px 0px;
+  margin: 13px 28px 0px 0px;
   font-weight: normal;
   line-height: 25%;
   font-size: 18px;
@@ -58,7 +58,7 @@
   list-style: none;
   text-align: center;
   margin-right: 1px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .header__theme-menu-button {
@@ -201,19 +201,19 @@
 @media ( min-width: 375px) {
   .header {
     min-block-size: 668px;
-    margin-bottom: 31px;
+    margin-bottom: 40px;
   }
   .header__decorated-zone::before {
-    top: 2px;
+    top: 10px;
     right: 0px;
   }
   .header__decorated-zone::after {
     left: 0px;
-    bottom: 20px;
+    bottom: 10px;
   }
   .header__theme-menu {
     justify-items: end;
-    margin-bottom: 65px;
+    margin-bottom: 64px;
   }
   .header__theme-menu-item:last-of-type {
     margin-bottom: 0px;
@@ -243,9 +243,6 @@
   .content-section__title {
     margin-bottom: 19px;
   }
-  /* .article-title {
-    margin-bottom: 10px;
-  } */
   .gallery-section .article-title {
     margin-bottom: 0px;
   }
@@ -273,7 +270,7 @@
     gap: 10.5px;
   }
   .footer__decorated-zone::before {
-    top: 10px;
+    top: 20px;
     right: 1px;
   }
   .footer__decorated-zone::after {
@@ -285,15 +282,16 @@
 @media ( min-width: 768px) {
   .page {
     margin: 0;
+    padding: 0px;
   }
   .header {
     min-block-size: 1024px;
-    margin: 8px 8px 51.5px 0px;
+    margin: 0px 8px 60px 0px;
     grid-template-columns: repeat(2, 1fr);
   }
   .header__theme-menu {
     grid-column: 2;
-    margin-bottom: 173px;
+    margin-bottom: 170px;
     text-align: left;
   }
   .header-title {
@@ -309,21 +307,21 @@
     max-inline-size: calc(100% - 15px);
   }
   .nav-decoration {
-    margin: 23px 38px 157px 0px;
+    margin: 23px 38px 0px 0px;
   }
   .header__theme-menu-list {
     margin-right: 10px;
   }
   .header__decorated-zone::before {
-    top: 10px;
+    top: 20px;
     right: 10px;
   }
   .header__decorated-zone::after {
-    bottom: 30px;
+    bottom: 20px;
     left: 20px;
   }
   .main-section {
-    padding: 0px 18px;
+    padding: 0px 20px;
   }
   .content-section {
     grid-template-columns: 1fr 2fr;

@@ -29,7 +29,7 @@
 @media ( min-width: 375px) {
   .theme-light .header__theme-menu-list {
     margin-top: 65px;
-    margin-bottom: 4px;
+    padding: 0px;
   }
 }
 @media ( min-width: 768px ) {
@@ -71,6 +71,7 @@
 
 @media (prefers-color-scheme: light) and ( min-width: 375px) {
   .header__theme-menu-list {
+    padding: 0px;
     margin-top: 65px;
     margin-bottom: 4px;
   }
