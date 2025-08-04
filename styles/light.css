@@ -13,10 +13,10 @@
   --main-text-color: #353430;
   --accent-text-color: #353430;
   --title-color: #FFC2E6;
-  --decoration-color: #353430; 
+  --decoration-color: #353430;
 }
 
-.theme-light .header__theme-menu-button:hover { 
+.theme-light .header__theme-menu-button:hover {
   border: 1px solid rgba(50, 49, 45, 0.4);
   padding: 0.5px 12px;
   }
@@ -55,7 +55,7 @@
     --main-text-color: #353430;
     --accent-text-color: #353430;
     --title-color: #FFC2E6;
-    --decoration-color: #353430; 
+    --decoration-color: #353430;
   }
   .header__theme-menu-button:hover {
   border: 1px solid rgba(50, 49, 45, 0.4);
