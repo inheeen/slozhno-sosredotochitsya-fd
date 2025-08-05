@@ -62,7 +62,7 @@
   padding: 0.5px 12px;
   }
   .header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--accent-text-color, #353430); 
+    border-bottom: 1px solid var(--accent-text-color, #353430);
   }
   .header__theme-menu-button_active {
     border: 1px solid var(--accent-text-color, #353430);
