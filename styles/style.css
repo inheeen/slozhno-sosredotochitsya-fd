@@ -400,7 +400,7 @@
 
 @media (height >= 668px) {
   .header, .footer {
-    grid-template-rows: 1fr min-content 1fr; 
+    grid-template-rows: 1fr min-content 1fr;
   }
 }
 
