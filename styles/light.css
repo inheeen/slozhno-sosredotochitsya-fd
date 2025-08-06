@@ -3,7 +3,7 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-.theme-light .nav-decoration {
+.theme-light .text-decoration {
   display: none;
 }
 :root.theme-light {
@@ -26,26 +26,9 @@
 .theme-light .header__theme-menu-button_active {
   border: 1px solid var(--accent-text-color, #353430);
 }
-@media ( min-width: 375px) {
-  .theme-light .header__theme-menu-list {
-    margin-top: 65px;
-    padding: 0px;
-  }
-}
-@media ( min-width: 768px ) {
-  .theme-light .header__theme-menu-list {
-    margin-top: 182px;
-    margin-bottom: 4px;
-  }
-}
-@media ( min-width: 1024px) {
-  .theme-light .header__theme-menu-list {
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-}
+
 @media (prefers-color-scheme: light) {
-  .nav-decoration {
+  .text-decoration {
     display: none;
   }
   :root {
@@ -69,26 +52,6 @@
   }
 }
 
-@media (prefers-color-scheme: light) and ( min-width: 375px) {
-  .header__theme-menu-list {
-    padding: 0px;
-    margin-top: 65px;
-    margin-bottom: 4px;
-  }
-}
 
-@media (prefers-color-scheme: light) and ( min-width: 768px) {
-  .header__theme-menu-list {
-    margin-top: 182px;
-    margin-bottom: 4px;
-  }
-}
-
-@media (prefers-color-scheme: light) and ( min-width: 1024px) {
-  .header__theme-menu-list {
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-}
 
 
