@@ -13,7 +13,7 @@
   --decoration-color: #FF0070;
 }
 
-.theme-dark .nav-decoration {
+.theme-dark .text-decoration {
   display: block;
 }
 
@@ -37,5 +37,8 @@
     --main-text-color: #F1B2CE;
     --accent-text-color: #000028;
     --decoration-color: #FF0070;
+  }
+  .text-decoration {
+    display: block;
   }
 }
