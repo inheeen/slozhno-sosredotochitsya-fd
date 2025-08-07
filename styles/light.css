@@ -48,7 +48,7 @@
     border-bottom: 1px solid var(--accent-text-color, #353430);
   }
   .header__theme-menu-button_active {
-    border: 1px solid var(--accent-text-color, #353430);     
+    border: 1px solid var(--accent-text-color, #353430);
   }
 }
 
